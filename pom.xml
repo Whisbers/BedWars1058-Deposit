@@ -6,7 +6,7 @@
 
   <groupId>me.parsa</groupId>
   <artifactId>Bedwars1058-Deposit</artifactId>
-  <version>1.5.1</version>
+  <version>1.5.2</version>
   <packaging>pom</packaging>
   <modules>
         <module>Deposit-Api</module>
