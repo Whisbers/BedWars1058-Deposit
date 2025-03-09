@@ -9,6 +9,7 @@ import me.parsa.depositplugin.Listeners.GameStartListener;
 import me.parsa.depositplugin.Listeners.PlayerDeathListener;
 import me.parsa.depositplugin.Listeners.PlayerJoin;
 import org.bukkit.Bukkit;
+import org.bukkit.ChatColor;
 import org.bukkit.configuration.file.YamlConfiguration;
 import org.bukkit.plugin.ServicePriority;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -41,6 +42,7 @@ public final class DepositPlugin extends JavaPlugin {
 
         Bukkit.getConsoleSender().sendMessage("[Deposit] Enabling plugin");
         Bukkit.getConsoleSender().sendMessage("[Deposit] Loading version v" + getDescription().getVersion());
+        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "[Deposit] BedWars1058 - Deposit by Parsa3323");
         Bukkit.getConsoleSender().sendMessage("[Deposit] Loading configs");
         String packageName = getServer().getClass().getPackage().getName();
         String version = packageName.split("\\.")[3];
@@ -85,7 +87,7 @@ public final class DepositPlugin extends JavaPlugin {
 
 
                 configContent.append("# ──────────────────────────────────────────────────────────────\n");
-                configContent.append("#   Punch to deposit - BedWars1058 Addon Configuration\n");
+                configContent.append("#   Punch to deposit - By Parsa3323\n");
                 configContent.append("# ──────────────────────────────────────────────────────────────\n");
                 configContent.append("#   This configuration file controls various aspects of the addon.\n");
                 configContent.append("#   Make sure to read the comments carefully before changing any settings.\n");
