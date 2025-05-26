@@ -6,7 +6,7 @@
 
     <groupId>me.parsa</groupId>
     <artifactId>deposit-plugin</artifactId>
-    <version>1.5.2</version>
+    <version>1.5.3</version>
     <packaging>jar</packaging>
 
     <name>deposit-plugin</name>
