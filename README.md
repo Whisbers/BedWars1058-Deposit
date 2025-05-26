@@ -1,65 +1,154 @@
-![img](https://imgurl.ir/uploads/u015825_minecraft_title_15.png)
+<div align="center">
 
-# BedWars-1058 Deposit Addon 
+# Bedwars1058-Deposit
 
-This is a **BedWars-1058 deposit addon** designed to enhance gameplay by allowing players to **deposit items efficiently**. Inspired by Hypixel's system, this addon provides a convenient way for players to **manage their resources** during the game. ⚔️🔥
+`1.8, 1.9`
 
-## 📌 How It Works
-When a player is in a BedWars match, they can quickly store their items by **left-clicking** with them. This action automatically transfers the item into the **ender chest** or the **team chest**, making it easier to **manage resources** and **share with teammates**. 🎒✅
+![GitHub Sponsors](https://img.shields.io/github/sponsors/Parsa3323?label=Sponsor&logo=GitHub)
+![GitHub contributors](https://img.shields.io/github/contributors/Parsa3323/BedWars1058-Deposit?label=Contributors&logo=GitHub)
+![GitHub Releases](https://img.shields.io/github/downloads/Parsa3323/BedWars1058-Deposit/total?label=Downloads&logo=GitHub)
+![GitHub last commit](https://img.shields.io/github/last-commit/Parsa3323/BedWars1058-Deposit?label=Last%20Commit&logo=GitHub)
+![GitHub issues](https://img.shields.io/github/issues/Parsa3323/BedWars1058-Deposit?label=Open%20Issues&logo=GitHub)
+![GitHub repo size](https://img.shields.io/github/repo-size/Parsa3323/BedWars1058-Deposit?color=yellow&logo=github)
+![GitHub license](https://img.shields.io/github/license/Parsa3323/BedWars1058-Deposit?color=purple&logo=github)
+![Forks](https://img.shields.io/github/forks/Parsa3323/BedWars1058-Deposit?style=)
+</div>
 
-## 🌟 Features
-- ⚡ **Instant deposit** by left-clicking with an item.
-- 🏹 Supports both **ender chests** and **team chests** for flexible storage.
-- ⏳ Prevents unnecessary time spent manually opening and dragging items.
-- 🏃 Improves game fluidity by streamlining inventory management.
-- 🛠️ **Compatible with BedWars-1058**, ensuring smooth integration with existing mechanics.
-- 🔧 Configurable settings to adjust behavior as per server requirements.
-- 🎵 Supports **custom sounds** and **visual effects** when depositing items.
-- 🔒 Ensures only valid items are stored to prevent exploits or abuse.
-- 🔗 **API support** for developers to integrate the deposit system into other plugins. 🖥️📡
-
-## ⚙️ How Depositing Works
-The deposit system is **intuitive and seamless**. When a player left-clicks with an item, the addon automatically determines whether they have access to a chest:
-- If an **ender chest** is available, the item will be stored there. 💜
-- If the player is near a **team chest**, the item can be placed inside for teammates to use. 🔷
-
-This feature allows teams to **strategize better**, enabling **faster resource sharing**. Instead of manually opening a chest and moving items, players can simply **left-click** and continue their game without interruptions. 🏆
-
-## 🔧 Customization & Configuration
-The addon includes **customizable settings** that allow server owners to tweak functionality:
-- **Admins** can configure which items can be deposited. ⚙️
-- **Enable or disable** sound effects. 🔊
-- Adjust prioritization between **ender chests and team chests**. 📦
-- 📡 **API support** to allow external plugins to interact with the deposit system.
-
-To prevent exploits, the deposit function **only works within the designated game area**. It does not function in the **lobby** or any unauthorized locations. 🚫 Additionally, the plugin ensures **compatibility** with existing **BedWars-1058 mechanics and economy systems**. 💰
-
-## 🎯 Key Benefits
-- 🚀 **Faster gameplay**, reducing downtime spent in inventory management.
-- 🤝 Encourages **teamwork** by facilitating easier item sharing.
-- 🎮 Provides an **enhanced user experience**, similar to **Hypixel’s BedWars system**.
-- 🛡️ Helps players **focus on strategy and PvP** rather than inventory organization.
-
-## 📥 Installation Guide
-Installing this addon is **quick and simple**:
-1. 📂 **Place the plugin** inside the `plugins` folder.
-2. 🔄 **Reload the server** to apply changes.
-3. 🛠️ **Adjust the config file** as needed.
-4. ✅ No additional dependencies required!
-
-## 🔊 Enhanced Gameplay Experience
-For players, the experience is **seamless**. They can continue playing **without worrying about inventory clutter**. With a simple **left-click**, their valuable items are **safely stored**, allowing them to focus on **battles and defense**. 🏹⚔️
-
-Additionally, the plugin includes **minor cosmetic enhancements**, such as **sound effects** when an item is successfully deposited. 🎶 This provides **immediate feedback**, letting players know their items have been stored safely. 📢
-
-## 🛠️ Performance & Optimization
-This addon is **optimized for performance** and has **minimal impact** on server resources. It uses **efficient event handling** to ensure **quick response times** without causing lag. 🖥️⚡
+[//]: # (![Spigot Downloads]&#40;https://img.shields.io/spiget/downloads/PLUGIN_ID?color=blue&logo=spigot&#41;)
+[//]: # (![GitHub Activity Graph]&#40;https://github-readme-activity-graph.vercel.app/graph?username=Parsa3323&theme=github-dark&#41;)
 
 
-## 🎉 Why Use This Addon?
-This **BedWars-1058 deposit addon** is an **excellent choice** for any server looking to **improve the gameplay experience**. By reducing the time spent managing inventory, players can **focus more on fighting, defending, and strategizing with their teams**. 🏰⚡
+<div align="center">
 
-With **configurable settings**, **customizable features**, and **API support**, this plugin **adapts to different playstyles** and **server needs**. Whether you’re running a **casual** or **competitive** BedWars server, this deposit addon is a **valuable addition**. 💎🔥
+[//]: # ([![S]&#40;https://img.shields.io/badge/Go_to-Spigot-yellow?style=for-the-badge&#41;]&#40;https://www.spigotmc.org/resources/advancedarmorstands.121022/&#41;)
 
-Experience **smoother gameplay, enhanced team coordination**, and an **overall better BedWars experience** with this **easy-to-use deposit addon**! 🎮🏆
+[//]: # ([![S]&#40;https://img.shields.io/badge/Go_to-Wiki-orange?style=for-the-badge&#41;]&#40;https://docs.advancedarmorstands.ir/&#41;)
+
+[//]: # ([![S]&#40;https://img.shields.io/badge/Go_to-PolyMart-green?style=for-the-badge&#41;]&#40;https://www.polymart.org/product/7829/advancedarmorstands&#41;)
+
+
+[![Repo Stats](https://github-readme-stats.vercel.app/api/pin/?username=Parsa3323&repo=BedWars1058-Deposit&theme=dark)
+](https://github.com/Parsa3323/BedWars1058-Deposit)
+
+
+
+</div>
+
+[//]: # (![FirstImg]&#40;https://biaupload.com/do.php?imgf=org-3b039f0f3c191.png&#41;)
+
+[//]: # ()
+[//]: # (![2Img]&#40;https://biaupload.com/do.php?imgf=org-02a4d92ff3c92.png&#41;)
+<div align="center">
+
+# Table of Content
+
+</div>
+
+- [Requirements](#requirements)
+
+- [Spigot](https://www.spigotmc.org/resources/advancedarmorstands.121022/)
+- [Configs](#Configs)
+    - [Main config](#Main-Configuration)
+
+
+<div align="center">
+
+# Configs
+
+This document contains the configuration details for BedWars1058-Deposit.
+
+## Main Configuration
+
+The `main.yml` configuration file allows you to enable or disable debugging.
+
+
+</div>
+
+```yaml
+# ──────────────────────────────────────────────────────────────
+#   Punch to deposit - By Parsa3323
+# ──────────────────────────────────────────────────────────────
+#   This configuration file controls various aspects of the addon.
+#   Make sure to read the comments carefully before changing any settings.
+# ──────────────────────────────────────────────────────────────
+
+# LOG LEVEL:
+# Determines the level of logging that will be shown in the console.
+# Available options:
+# - SEVERE   → Shows only critical errors.
+# - WARNING  → Displays warnings and serious issues.
+# - INFO     → Standard logging (recommended for most cases).
+# - CONFIG   → Shows additional configuration details.
+# - FINE     → Provides debugging information (useful for developers).
+# - FINER    → Even more detailed debugging logs.
+# - FINEST   → Maximum debugging details (may spam the console).
+# Default is INFO. Change only if needed for debugging purposes.
+log-level: FINE
+
+data-saving-method: SQLITE
+
+# ──────────────────────────────────────────────────────────────
+
+# DISABLE HOLOGRAM AFTER DEATH:
+# If enabled (true), the deposit hologram will be removed after the player dies.
+disable-hologram-after-death: false
+
+# ──────────────────────────────────────────────────────────────
+
+# HOLOGRAM REGISTER EVENT:
+# Determines when the deposit hologram should be registered in the game.
+hologram-register-event: GameStateChangeEvent
+
+# ──────────────────────────────────────────────────────────────
+
+# DEPOSIT WHOLE ITEMSTACK:
+# If enabled (true), depositing an item will move all matching item stacks
+# (same type as the item in hand) from the player's inventory to the Ender Chest.
+deposit-whole-itemstack: false
+
+# ──────────────────────────────────────────────────────────────
+
+# SHIFT-CLICK ON CHEST TO SET:
+# If enabled (true), while in BedWars1058 setup mode,
+# players can shift-click on an Ender Chest or Chest to register it
+# as a valid deposit chest for holograms.
+shift-click-on-chest-to-set: true
+
+# ──────────────────────────────────────────────────────────────
+
+# SET CHEST LOCATIONS ON PLAYER JOIN:
+# If enabled (true), all chest locations will be saved when the a player joins the server.
+set-chest-locations-on-join: true
+
+```
+
+
+<div align="center">
+
+
+
+</div>
+
+<div align="center">
+
+# Requirements
+</div>
+
+- [Bedwars1058](https://www.spigotmc.org/resources/placeholderapi.6245/)
+
+<div align="center">
+
+# Contributors
+
+<a href="https://github.com/Parsa3323/BedWars1058-Deposit/graphs/contributors">
+  <img src="https://contrib.rocks/image?repo=Parsa3323/BedWars1058-Deposit" />
+</a>
+
+</div>
+
+
+
+
+
+
 

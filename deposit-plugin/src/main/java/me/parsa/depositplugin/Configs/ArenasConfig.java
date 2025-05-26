@@ -26,7 +26,6 @@ public class ArenasConfig {
         }
 
         fileConfiguration = YamlConfiguration.loadConfiguration(file);
-//1
 
     }
 

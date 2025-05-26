@@ -1,9 +1,12 @@
 package me.parsa.depositapi;
 
 
+import me.parsa.depositapi.Types.DepositType;
+import org.bukkit.Location;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
+import org.bukkit.inventory.ItemStack;
 
 import java.util.List;
 
@@ -44,7 +47,7 @@ public interface DepositApi {
         /**
          * True if every thing worked
          */
-        boolean isHologramsWorked();
+        boolean doesHologramsWorked();
 
         /**
          * Deletes players holograms

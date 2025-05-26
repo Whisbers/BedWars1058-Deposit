@@ -3,7 +3,7 @@ package me.parsa.depositplugin;
 import me.parsa.depositapi.DepositApi;
 import me.parsa.depositplugin.Configs.ArenasConfig;
 import me.parsa.depositplugin.Listeners.GameStartListener;
-import me.parsa.depositplugin.Manager.ConfigMain;
+import me.parsa.depositplugin.Manager.MainConfig;
 import org.bukkit.World;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.entity.Player;
@@ -15,7 +15,7 @@ public class API implements DepositApi {
     ConfigManager configManager = new ConfigManager() {
         @Override
         public List<String> getArenaChests(World arena) {
-            return ConfigMain.getArenaChests(arena);
+            return MainConfig.getArenaChests(arena);
         }
 
         @Override
@@ -32,7 +32,7 @@ public class API implements DepositApi {
         }
 
         @Override
-        public boolean isHologramsWorked() {
+        public boolean doesHologramsWorked() {
             GameStartListener gameStartListener = new GameStartListener(DepositPlugin.plugin, ArenasConfig.get());
             return gameStartListener.succesGameState && gameStartListener.successGameAssgin || gameStartListener.isReloaded;
         }

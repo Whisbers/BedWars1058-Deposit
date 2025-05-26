@@ -19,6 +19,7 @@
 # Default is INFO. Change only if needed for debugging purposes.
 log-level: INFO
 
+
 # ──────────────────────────────────────────────────────────────
 
 # DISABLE HOLOGRAM AFTER DEATH:
@@ -34,6 +35,7 @@ disable-hologram-after-death: false
 # Available options:
 # - GameStateChangeEvent → Registers the hologram when the game state changes.
 # - TeamAssignEvent      → Registers the hologram when a player is assigned to a team.
+# - None → Disables holograms
 # ⚠ WARNING: This setting should only be changed if:
 #   1. The plugin itself tells you to do so.
 #   2. The developer (that's me!) explicitly instructs you to modify it.
@@ -62,3 +64,4 @@ shift-click-on-chest-to-set: true
 # If enabled (true), all chest locations will be saved when the a player joins the server.
 # ⚠ WARNING: If you have a large number of maps, this may cause lag on the first time.
 set-chest-locations-on-join: true
+

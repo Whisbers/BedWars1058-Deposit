@@ -6,8 +6,7 @@ import org.bukkit.World;
 
 import java.util.List;
 
-public class ConfigMain {
-    //i DONT KNOW
+public class MainConfig {
     public static List<String> getArenaChests(World arena) {
         DepositPlugin.debug("Ran a method for api : getArenaChests");
         String path = "worlds." + arena.getName() + ".chestLocations";

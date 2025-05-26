@@ -18,6 +18,7 @@ public class PlayerDepositEvent extends Event {
 
     Block block;
 
+    @Deprecated
     public Block getBlock() {
         return block;
     }

@@ -361,7 +361,6 @@ public class GameStartListener implements Listener {
 
     public void createHDLocations() {
         DepositPlugin.debug("Creating HD locations for all arenas");
-        //DepositPlugin.info("It looks like you added a map & its the first time running the plugin");
 
         for (IArena arena : DepositPlugin.bedWars.getArenaUtil().getArenas()) {
             DepositPlugin.info("Processing arena: " + arena.getWorldName());

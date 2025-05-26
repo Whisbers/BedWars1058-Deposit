@@ -27,7 +27,6 @@ public final class DepositPlugin extends JavaPlugin {
     public static DepositApi api;
 
     public static DepositPlugin plugin;
-    //Main
     private IVersionSupport versionSupport;
     public static BedWars bedWars;
 

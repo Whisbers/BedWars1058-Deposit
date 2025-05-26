@@ -21,5 +21,4 @@ public class PlayerJoin implements Listener {
             }.runTaskAsynchronously(DepositPlugin.plugin);
         }
     }
-    //
 }

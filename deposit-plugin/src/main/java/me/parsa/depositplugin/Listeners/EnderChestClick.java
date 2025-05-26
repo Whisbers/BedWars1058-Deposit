@@ -196,7 +196,7 @@ public class EnderChestClick implements Listener {
 
                                                     p.sendMessage(ChatColor.GRAY + "You deposited x" + totalCount + " " + (itemMat == Material.GOLDEN_APPLE || itemMat == Material.GOLD_INGOT ? ChatColor.GOLD : ChatColor.WHITE) + itemName + ChatColor.GRAY + " to the" + ChatColor.LIGHT_PURPLE + " Ender Chest");
 
-                                                    p.getServer().getConsoleSender().sendMessage(ChatColor.GOLD + p.getName() + " deposited " + ChatColor.WHITE + totalCount + "x " + itemMat + ChatColor.GOLD + " to the ender chest");
+                                                    DepositPlugin.info(p.getName() + " deposited " + totalCount + "x " + itemMat + " to the ender chest");
 
                                                     p.playSound(p.getLocation(), Sound.CHEST_CLOSE, 1.0f, 1.0f);
                                                 } else {
@@ -222,8 +222,8 @@ public class EnderChestClick implements Listener {
                                                         + (itemMat == Material.GOLDEN_APPLE || itemMat == Material.GOLD_INGOT ? ChatColor.GOLD : ChatColor.WHITE)
                                                         + itemName + ChatColor.GRAY + " to the" + ChatColor.LIGHT_PURPLE + " Ender Chest");
 
-                                                p.getServer().getConsoleSender().sendMessage(ChatColor.GOLD + p.getName() + " deposited "
-                                                        + ChatColor.WHITE + amount + "x " + itemMat + ChatColor.GOLD + " to the ender chest");
+                                                DepositPlugin.info(p.getName() + " deposited "
+                                                        + amount + "x " + itemMat + " to the ender chest");
 
                                                 p.playSound(p.getLocation(), Sound.CHEST_CLOSE, 1.0f, 1.0f);
 
@@ -231,9 +231,6 @@ public class EnderChestClick implements Listener {
 
                                         }
                                     }.runTaskAsynchronously(DepositPlugin.plugin);
-
-
-//                                p.getInventory().removeItem(item);
 
                                 } else {
                                     DepositPlugin.warn("Player deposit event has been canceled");
@@ -429,19 +426,4 @@ public class EnderChestClick implements Listener {
 
     }
 
-    private String serializeLocation(Location location) {
-        DepositPlugin.debug("Serializing location: " + location);
-        return location.getBlockX() + "," + location.getBlockY() + "," + location.getBlockZ();
-    }
-
-    private Location deserializeLocation(String locString, World world) {
-        DepositPlugin.debug("Deserializing location string: " + locString);
-        String[] parts = locString.split(",");
-        int x = Integer.parseInt(parts[0]);
-        int y = Integer.parseInt(parts[1]);
-        int z = Integer.parseInt(parts[2]);
-        Location location = new Location(world, x, y, z);
-        DepositPlugin.debug("Deserialized location: " + location);
-        return location;
-    }
 }
