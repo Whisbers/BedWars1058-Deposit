@@ -134,7 +134,7 @@ set-chest-locations-on-join: true
 # Requirements
 </div>
 
-- [Bedwars1058](https://www.spigotmc.org/resources/placeholderapi.6245/)
+- [Bedwars1058](https://github.com/andrei1058/BedWars1058)
 
 <div align="center">
 
