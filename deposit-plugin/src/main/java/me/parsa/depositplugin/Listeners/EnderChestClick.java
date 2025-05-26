@@ -6,6 +6,7 @@ import com.andrei1058.bedwars.api.arena.team.ITeam;
 import com.andrei1058.bedwars.api.configuration.ConfigPath;
 import com.andrei1058.bedwars.api.language.Messages;
 import com.andrei1058.bedwars.api.server.ISetupSession;
+import com.cryptomorin.xseries.XSound;
 import me.parsa.depositapi.Events.PlayerDepositEvent;
 import me.parsa.depositapi.Types.DepositType;
 import me.parsa.depositplugin.Configs.ArenasConfig;
@@ -112,7 +113,7 @@ public class EnderChestClick implements Listener {
 
                             String made_the = ChatColor.translateAlternateColorCodes('&', the);
                             p.sendMessage(made_the);
-                            p.playSound(p.getLocation(), Sound.NOTE_STICKS, 1, 1);
+                            p.playSound(p.getLocation(), XSound.BLOCK_NOTE_BLOCK_HAT.parseSound(), 1, 1);
                             removePlayerFromSelectionMode(p);
                             switch (block.getType()) {
                                 case ENDER_CHEST:
@@ -198,7 +199,7 @@ public class EnderChestClick implements Listener {
 
                                                     DepositPlugin.info(p.getName() + " deposited " + totalCount + "x " + itemMat + " to the ender chest");
 
-                                                    p.playSound(p.getLocation(), Sound.CHEST_CLOSE, 1.0f, 1.0f);
+                                                    p.playSound(p.getLocation(), XSound.BLOCK_CHEST_CLOSE.parseSound(), 1.0f, 1.0f);
                                                 } else {
                                                     p.sendMessage(ChatColor.RED + "You don't have any " + itemMat + " to deposit!");
                                                 }
@@ -225,7 +226,7 @@ public class EnderChestClick implements Listener {
                                                 DepositPlugin.info(p.getName() + " deposited "
                                                         + amount + "x " + itemMat + " to the ender chest");
 
-                                                p.playSound(p.getLocation(), Sound.CHEST_CLOSE, 1.0f, 1.0f);
+                                                p.playSound(p.getLocation(), XSound.BLOCK_CHEST_CLOSE.parseSound(), 1.0f, 1.0f);
 
                                             }
 
@@ -311,7 +312,7 @@ public class EnderChestClick implements Listener {
                                                     p.sendMessage(ChatColor.GRAY + "You" + " deposited x" + itemCount[0] + " " + ChatColor.WHITE + itemName + ChatColor.GRAY + " to the" + ChatColor.AQUA + " Team Chest");
                                                 }
                                                 p.getServer().getConsoleSender().sendMessage(ChatColor.GOLD + p.getName() + " deposited " + ChatColor.WHITE + item.getAmount() + "x " + item.getType() + ChatColor.GOLD + " to the chest");
-                                                p.playSound(p.getLocation(), Sound.CHEST_CLOSE, 1.0f, 1.0f);
+                                                p.playSound(p.getLocation(), XSound.BLOCK_CHEST_CLOSE.parseSound(), 1.0f, 1.0f);
                                                 p.getInventory().removeItem(item);
                                             } else {
                                                 ItemStack itemInHand = p.getItemInHand();
@@ -334,7 +335,7 @@ public class EnderChestClick implements Listener {
                                                 p.getServer().getConsoleSender().sendMessage(ChatColor.GOLD + p.getName() + " deposited "
                                                         + ChatColor.WHITE + amount + "x " + itemInHand.getType() + ChatColor.GOLD + " to the chest");
 
-                                                p.playSound(p.getLocation(), Sound.CHEST_CLOSE, 1.0f, 1.0f);
+                                                p.playSound(p.getLocation(), XSound.BLOCK_CHEST_CLOSE.parseSound(), 1.0f, 1.0f);
 
                                             }
 
