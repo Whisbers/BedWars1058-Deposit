@@ -37,10 +37,10 @@ public final class DepositPlugin extends JavaPlugin {
         bedWars = Bukkit.getServicesManager().getRegistration(BedWars.class).getProvider();
         getServer().getServicesManager().register(DepositApi.class, api, this, ServicePriority.Normal);
 
-        Bukkit.getConsoleSender().sendMessage("[Deposit] Enabling plugin");
-        Bukkit.getConsoleSender().sendMessage("[Deposit] Loading version v" + getDescription().getVersion());
-        Bukkit.getConsoleSender().sendMessage(ChatColor.GREEN + "[Deposit] BedWars1058 - Deposit by Parsa3323");
-        Bukkit.getConsoleSender().sendMessage("[Deposit] Loading configs");
+        status("Enabling plugin");
+        status("Loading version v" + getDescription().getVersion());
+        status("BedWars1058 - Deposit by Parsa3323");
+        status("Loading configs");
         String packageName = getServer().getClass().getPackage().getName();
         String version = packageName.split("\\.")[3];
 
@@ -56,19 +56,21 @@ public final class DepositPlugin extends JavaPlugin {
 
         configuration = YamlConfiguration.loadConfiguration(configFile);
 
-        Bukkit.getConsoleSender().sendMessage("[Deposit] Registering events");
-        Bukkit.getConsoleSender().sendMessage("[Deposit] Hooking into bw1085");
+        status("Registering events");
+        status("Hooking into bw1085");
+
         if (Bukkit.getPluginManager().getPlugin("BedWars1058") == null) {
             getLogger().severe("BedWars1058 was not found. Disabling...");
             Bukkit.getPluginManager().disablePlugin(this);
             return;
         }
+
         BedWars bedwarsAPI = Bukkit.getServicesManager().getRegistration(BedWars.class).getProvider();
         getServer().getPluginManager().registerEvents(new EnderChestClick(), this);
         getServer().getPluginManager().registerEvents(new GameStartListener(this, ArenasConfig.get()), this);
         getServer().getPluginManager().registerEvents(new PlayerDeathListener(), this);
         getServer().getPluginManager().registerEvents(new PlayerJoin(), this);
-        Bukkit.getConsoleSender().sendMessage("[Deposit] Enabled plugin");
+        status("Enabled plugin");
         String levelName = getConfig().getString("log-level", "INFO").toUpperCase();
         logLevel = Level.parse(levelName);
         logger.setLevel(logLevel);
@@ -170,4 +172,9 @@ public final class DepositPlugin extends JavaPlugin {
             logger.severe("[ERROR] " + message);
         }
     }
+
+    public static void status(String message) {
+        logger.info(message);
+    }
+
 }
