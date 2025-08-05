@@ -16,6 +16,9 @@ public class ArenasConfig {
     public static void setup() {
         file = new File(DepositPlugin.bedWars.getAddonsPath(), "chestLocations.yml");
 
+        if (!file.getParentFile().exists()) {
+            file.getParentFile().mkdirs();
+        }
 
         if (!file.exists()) {
             try {

@@ -2,7 +2,6 @@ package me.parsa.depositplugin;
 
 import com.andrei1058.bedwars.api.BedWars;
 import me.parsa.depositapi.DepositApi;
-import me.parsa.depositapi.versionsupport.IVersionSupport;
 import me.parsa.depositplugin.Configs.ArenasConfig;
 import me.parsa.depositplugin.Listeners.EnderChestClick;
 import me.parsa.depositplugin.Listeners.GameStartListener;
@@ -27,7 +26,6 @@ public final class DepositPlugin extends JavaPlugin {
     public static DepositApi api;
 
     public static DepositPlugin plugin;
-    private IVersionSupport versionSupport;
     public static BedWars bedWars;
 
     @Override
@@ -51,6 +49,7 @@ public final class DepositPlugin extends JavaPlugin {
         ArenasConfig.get().options().copyDefaults(true);
         ArenasConfig.save();
         File configFile = new File(bedWars.getAddonsPath(), "Deposit/config.yml");
+
         if (!configFile.exists()) {
             createConfigWithComments(configFile);
         }
