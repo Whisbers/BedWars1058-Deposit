@@ -231,7 +231,7 @@ public class EnderChestClick implements Listener {
                                             }
 
                                         }
-                                    }.runTaskAsynchronously(DepositPlugin.plugin);
+                                    }.runTask(DepositPlugin.plugin);
 
                                 } else {
                                     DepositPlugin.warn("Player deposit event has been canceled");
@@ -340,7 +340,7 @@ public class EnderChestClick implements Listener {
                                             }
 
                                         }
-                                    }.runTaskAsynchronously(DepositPlugin.plugin);
+                                    }.runTask(DepositPlugin.plugin);
 
 
 
