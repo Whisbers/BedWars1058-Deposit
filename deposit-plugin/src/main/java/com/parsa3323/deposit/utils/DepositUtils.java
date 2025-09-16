@@ -1,9 +1,9 @@
-package me.parsa.depositplugin.utils;
+package com.parsa3323.deposit.utils;
 
 import com.andrei1058.bedwars.api.server.ISetupSession;
 import com.cryptomorin.xseries.XSound;
-import me.parsa.depositplugin.Configs.ArenasConfig;
-import me.parsa.depositplugin.DepositPlugin;
+import com.parsa3323.deposit.Configs.ArenasConfig;
+import com.parsa3323.deposit.DepositPlugin;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
 import org.bukkit.Material;

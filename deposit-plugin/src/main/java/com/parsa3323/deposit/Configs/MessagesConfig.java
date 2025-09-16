@@ -1,6 +1,6 @@
-package me.parsa.depositplugin.Configs;
+package com.parsa3323.deposit.Configs;
 
-import me.parsa.depositplugin.DepositPlugin;
+import com.parsa3323.deposit.DepositPlugin;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.configuration.file.YamlConfiguration;
 

@@ -1,38 +1,30 @@
-package me.parsa.depositplugin.Listeners;
+package com.parsa3323.deposit.Listeners;
 
 import com.andrei1058.bedwars.api.BedWars;
 import com.andrei1058.bedwars.api.arena.IArena;
 import com.andrei1058.bedwars.api.arena.team.ITeam;
 import com.andrei1058.bedwars.api.configuration.ConfigPath;
 import com.andrei1058.bedwars.api.language.Messages;
-import com.andrei1058.bedwars.api.server.ISetupSession;
-import com.cryptomorin.xseries.XSound;
-import me.parsa.depositapi.Events.PlayerDepositEvent;
-import me.parsa.depositapi.Types.DepositType;
-import me.parsa.depositplugin.Configs.ArenasConfig;
-import me.parsa.depositplugin.Configs.MessagesConfig;
-import me.parsa.depositplugin.DepositPlugin;
-import me.parsa.depositplugin.utils.DepositUtils;
+import com.parsa3323.deposit.api.Events.PlayerDepositEvent;
+import com.parsa3323.deposit.api.Types.DepositType;
+import com.parsa3323.deposit.Configs.MessagesConfig;
+import com.parsa3323.deposit.DepositPlugin;
+import com.parsa3323.deposit.utils.DepositUtils;
 import org.bukkit.*;
 import org.bukkit.block.Block;
 import org.bukkit.block.Chest;
 import org.bukkit.entity.ArmorStand;
 import org.bukkit.entity.Entity;
-import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
-import org.bukkit.inventory.Inventory;
 import org.bukkit.inventory.ItemStack;
-import org.bukkit.scheduler.BukkitRunnable;
 
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.List;
 import java.util.UUID;
-import java.util.stream.Collectors;
 
 import static com.andrei1058.bedwars.api.language.Language.getMsg;
 
