@@ -10,6 +10,7 @@ import com.cryptomorin.xseries.XSound;
 import me.parsa.depositapi.Events.PlayerDepositEvent;
 import me.parsa.depositapi.Types.DepositType;
 import me.parsa.depositplugin.Configs.ArenasConfig;
+import me.parsa.depositplugin.Configs.MessagesConfig;
 import me.parsa.depositplugin.DepositPlugin;
 import me.parsa.depositplugin.utils.DepositUtils;
 import org.bukkit.*;
@@ -95,7 +96,7 @@ public class EnderChestClick implements Listener {
             PlayerDepositEvent event =  new PlayerDepositEvent(p, DepositType.ENDER_CHEST, block);
             Bukkit.getPluginManager().callEvent(event);
             if (!event.isCancelled()) {
-                DepositUtils.depositItems(p, p.getEnderChest(), p.getItemInHand().getType(), ChatColor.DARK_PURPLE + "Ender Chest");
+                DepositUtils.depositItems(p, p.getEnderChest(), p.getItemInHand().getType(), MessagesConfig.get().getString("player_deposit_ender_chest"));
             }
             e.setCancelled(true);
 
@@ -105,7 +106,7 @@ public class EnderChestClick implements Listener {
             PlayerDepositEvent event =  new PlayerDepositEvent(p, DepositType.CHEST, block);
             Bukkit.getPluginManager().callEvent(event);
             if (!event.isCancelled()) {
-                DepositUtils.depositItems(p, chest.getInventory(), p.getItemInHand().getType(), ChatColor.AQUA + "Team Chest");
+                DepositUtils.depositItems(p, chest.getInventory(), p.getItemInHand().getType(),  MessagesConfig.get().getString("player_deposit_chest"));
             }
             e.setCancelled(true);
 

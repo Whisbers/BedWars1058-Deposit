@@ -78,7 +78,7 @@ public class DepositUtils {
         }
     }
 
-    public static void sendDepositMessage(Player p, int amount, Material mat, String targetName) {
+    public static void sendDepositMessage(Player p, int amount, Material mat, String fullMessage) {
         if (amount <= 0) {
             p.sendMessage(ChatColor.RED + "You don't have any " + mat + " to deposit!");
             return;
@@ -88,12 +88,19 @@ public class DepositUtils {
                 .collect(Collectors.joining(" "));
         ChatColor color = (mat == Material.GOLDEN_APPLE || mat == Material.GOLD_INGOT) ? ChatColor.GOLD : ChatColor.WHITE;
 
-        p.sendMessage(ChatColor.GRAY + "You deposited x" + amount + " " + color + itemName + ChatColor.GRAY + " to the " + targetName);
+        p.sendMessage(
+                ChatColor.translateAlternateColorCodes('&',
+                        fullMessage
+                                .replace("%amount%", String.valueOf(amount))
+                                .replace("%color%", color.toString())
+                                .replace("%material%", itemName)
+                )
+        );
         p.playSound(p.getLocation(), XSound.BLOCK_CHEST_CLOSE.parseSound(), 1, 1);
     }
 
 
-    public static void depositItems(Player p, Inventory target, Material itemMat, String targetName) {
+    public static void depositItems(Player p, Inventory target, Material itemMat, String fullMessage) {
         boolean wholeStack = DepositPlugin.plugin.configuration.getBoolean("deposit-whole-itemstack");
         if (wholeStack) {
             int total = 0;
@@ -104,13 +111,13 @@ public class DepositUtils {
                     target.addItem(itemStack);
                 }
             }
-            sendDepositMessage(p, total, itemMat, targetName);
+            sendDepositMessage(p, total, itemMat, fullMessage);
         } else {
             ItemStack inHand = p.getItemInHand();
             int amount = inHand.getAmount();
             target.addItem(inHand);
             p.setItemInHand(null);
-            sendDepositMessage(p, amount, itemMat, targetName);
+            sendDepositMessage(p, amount, itemMat, fullMessage);
         }
     }
 
